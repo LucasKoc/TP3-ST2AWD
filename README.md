@@ -20,7 +20,7 @@ To create a new Vue project, we can use the following command:
 vue create vue-oath-microsoft-graph
 ```
 
-This view is shown in the terminal
+This view is shown in the terminal:
 
 ```bash
 Vue CLI v5.0.8
@@ -87,5 +87,11 @@ npm run serve
 After deleting the `HelloWorld.vue` file, and all related assets in the `App.vue` file, we can see the following result:
 
 ![We see nothing but the text we placed in our page](https://raw.githubusercontent.com/LucasKoc/TP3-ST2AWD/refs/heads/main/Ressources/Screenshot%202024-10-04%20at%2010.17.59.png "Empty page with a little message saying that there is nothing like in the subject")
+
+#### Exercise 4: Create a new component
+
+To create the HomePage, we create a new file `HomePage.vue` in the `src/pages` folder, and update `App.vue` file. We can see the following content:
+
+![We see our new page with HomePage components](https://raw.githubusercontent.com/LucasKoc/TP3-ST2AWD/refs/heads/main/Ressources/Screenshot%202024-10-04%20at%2010.38.50.png "Our new page with HomePage components")
 
 
