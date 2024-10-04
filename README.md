@@ -94,4 +94,12 @@ To create the HomePage, we create a new file `HomePage.vue` in the `src/pages` f
 
 ![We see our new page with HomePage components](https://raw.githubusercontent.com/LucasKoc/TP3-ST2AWD/refs/heads/main/Ressources/Screenshot%202024-10-04%20at%2010.38.50.png "Our new page with HomePage components")
 
+#### Exercise 5: Create new components
+
+To create the `Header` and `Footer` components, we create new files `Header.vue` and `Footer.vue` in the `src/components` folder, and update `HomePage.vue` file.
+Note that fontawesome is used for the icons and added in our lab using this [thread](https://stackoverflow.com/questions/66389974/using-font-awesome-in-vue-3).
+
+Here's the result:
+
+![We see our new page with new components](https://raw.githubusercontent.com/LucasKoc/TP3-ST2AWD/refs/heads/main/Ressources/Screenshot%202024-10-04%20at%2012.01.35.png "Our new page with new components")
 
