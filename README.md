@@ -103,3 +103,10 @@ Here's the result:
 
 ![We see our new page with new components](https://raw.githubusercontent.com/LucasKoc/TP3-ST2AWD/refs/heads/main/Ressources/Screenshot%202024-10-04%20at%2012.01.35.png "Our new page with new components")
 
+#### Question 5: What is the difference between scoped and non-scoped CSS?
+
+Scoped css is only applied to the component it is defined in, while non-scoped css is applied to the entire application.
+
+#### Exercise 6: BaseLayout
+
+In this exercise, the file `App.vue` has been updated to include the `BaseLayout` component. The `BaseLayout` component has been created in the `src/layouts` folder.
