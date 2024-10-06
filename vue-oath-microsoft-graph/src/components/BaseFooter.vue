@@ -17,7 +17,7 @@ export default {
   display: flex;
   justify-content: center;
   padding: 0em 1em 0em 1em;
-  background-color: #1f2023;
+  background-color: var(--vt-c-brand-dark);
 
   height: 5vh;
   width: 100%;
@@ -33,16 +33,17 @@ export default {
 }
 
 #footer p {
-  color: white;
+  color: var(--vt-c-white-soft);
 }
 
-#footer a {
-  color: white;
+#footer a,
+#footer a:visited {
+  color: var(--vt-c-white-soft);
   text-decoration: none;
 }
 
 #footer a:hover {
-  color: #b3b3b3;
+  color: var(--vt-c-text-3);
   text-decoration: underline;
   text-decoration-thickness: 0.5px;
 }

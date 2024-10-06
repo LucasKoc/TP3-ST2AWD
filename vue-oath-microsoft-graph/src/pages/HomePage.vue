@@ -16,8 +16,10 @@ export default {
     </div>
 
     <div>
-      <base-button style="margin: 1em;" role="button">BaseButton with custom margin</base-button>
+      <base-button role="button" color="primary">BaseButton</base-button>
       <base-button role="button" :disabled="true">BaseButton Disabled</base-button>
+      <base-button role="button" color="warn">BaseButton with color props</base-button>
+      <base-button role="button" color="danger">BaseButton with color props</base-button>
     </div>
   </div>
 </template>
@@ -36,7 +38,7 @@ div.main {
 
 div {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
 }
 </style>

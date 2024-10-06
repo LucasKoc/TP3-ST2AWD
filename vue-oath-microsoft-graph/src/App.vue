@@ -20,13 +20,5 @@ export default {
 </script>
 
 <style>
-* {
-  font-family: 'Montserrat', 'Arial', sans-serif;
-}
 
-body {
-  margin: 0;
-
-  min-height: 100%;
-}
 </style>

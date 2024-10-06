@@ -1,8 +1,12 @@
 <script>
 import HomePage from "@/pages/HomePage.vue";
+import BaseButton from "@/components/BaseButton.vue";
 
 export default {
   name: "BaseHeader",
+  components: {
+    BaseButton
+  },
   computed: {
     HomePage() {
       return HomePage
@@ -15,10 +19,7 @@ export default {
 <div id="header">
   <div class="header-container">
     <div>
-        <font-awesome-icon :icon="['fas', 'house']" />
-    </div>
-    <div>
-      <p>Home</p>
+        <BaseButton icon="house" role="button" color="primary">Home</BaseButton>
     </div>
   </div>
 
@@ -27,7 +28,7 @@ export default {
       <p>Not Logged Yet</p>
     </div>
     <div>
-      <font-awesome-icon :icon="['fas', 'user']" />
+      <font-awesome-icon :icon="['fas', 'user']" :style="{color: 'white'}" />
     </div>
   </div>
 </div>
@@ -39,7 +40,7 @@ export default {
   display: flex;
   justify-content: space-between;
   padding: 1em 2em 1em 2em;
-  background-color: #42b983;
+  background-color: var(--vt-c-brand);
 
   height: 3vh;
 }
@@ -52,6 +53,10 @@ export default {
   display: flex;
   align-items: center;
   margin: 0 0.5em 0 0.5em;
+}
+
+p {
+  color: var(--vt-c-white-soft);
 }
 
 </style>

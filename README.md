@@ -119,4 +119,15 @@ When a non-prop attribute is passed down to a component, it is automatically add
 
 The base button component has been implemented in the `src/components/BaseButton.vue` file. The `BaseButton` component has been used in the `HomePage` component.
 
-#### Exercise 8: 
+#### Exercise 8: Color palette and prop for BaseButton
+
+For this part, the file `src/assets/css/base.css` hase been added with (modified) color palette template from Vue.js. File has been imported into `main.js` to spread the color palette to the entire application.
+The `BaseButton` component has been updated to accept a `color` prop. It also accept `icon` prop to add an `font-awesome-icon` to the button.
+Three levels of buttons has been added :
+- Primary
+- Warn
+- Danger
+
+Here's the result:
+
+![Page with new color palette](https://raw.githubusercontent.com/LucasKoc/TP3-ST2AWD/refs/heads/main/Ressources/Screenshot%202024-10-06%20at%2023.40.31.png "Our page with new color palette")
