@@ -110,3 +110,13 @@ Scoped css is only applied to the component it is defined in, while non-scoped c
 #### Exercise 6: BaseLayout
 
 In this exercise, the file `App.vue` has been updated to include the `BaseLayout` component. The `BaseLayout` component has been created in the `src/layouts` folder.
+
+#### Question 6: non-prop attributes
+
+When a non-prop attribute is passed down to a component, it is automatically added to the root element of the component's template. This is because Vue.js automatically binds all attributes to the root element of the component's template.
+
+#### Exercise 7: Implement BaseButton
+
+The base button component has been implemented in the `src/components/BaseButton.vue` file. The `BaseButton` component has been used in the `HomePage` component.
+
+#### Exercise 8: 
