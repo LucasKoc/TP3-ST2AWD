@@ -156,3 +156,24 @@ The `finally()` method is used instead of `then()` because it is called regardle
 Bug introduced:
 - The parent's non-prop attributes are automatically added to the root element of the component's template. This can cause unexpected behavior if the parent's non-prop attributes are not intended to be passed down to the component (Loss of control).
 - If `inheritAttrs: true`, there can be duplicate event handling (eg. `handleAsyncClick` will be applied to `AsyncButton` and `BaseButton` in root element => multiple invocation).
+
+### Bonus: Added TypeScript
+
+We added TypeScript to the project by running the following command:
+
+```bash
+vue add typescript
+```
+
+Files has been modified to be compatible with TypeScript.
+Here's the result from the terminal, with new compilation check:
+```bash
+ DONE  Compiled successfully in 273ms                                                                                                                                                                     4:21:27 PM
+
+
+  App running at:
+  - Local:   http://localhost:8080/ 
+  - Network: http://10.3.217.198:8080/
+
+No issues found.
+```
