@@ -10,14 +10,26 @@ export default {
   },
 
   methods: {
+    clickCounter () {
+      this.clickCount++;
+      console.log("Clicked " + this.clickCount + " times");
+    },
+
     handleAsyncClick() {
+      this.clickCounter();
       return new Promise((resolve) => {
         setTimeout(() => {
           resolve();
-        }, 2000);
+        }, this.clickCount * 1000);
       });
     },
   },
+
+  data() {
+    return {
+      clickCount: 0,
+    }
+  }
 }
 </script>
 
@@ -33,7 +45,24 @@ export default {
       <base-button role="button" color="warn">BaseButton with color props</base-button>
       <base-button role="button" color="danger">BaseButton with color props</base-button>
 
+      <!-- If we want to affect counter from other components: -->
+      <!-- BaseButton version
+      <base-button role="button" color="primary" @click="clickCounter">BaseButton</base-button>
+      <base-button role="button" :disabled="true" @click="clickCounter">BaseButton Disabled</base-button>
+      <base-button role="button" color="warn" @click="clickCounter">BaseButton with color props</base-button>
+      <base-button role="button" color="danger" @click="clickCounter">BaseButton with color props</base-button>
+      -->
+
+      <!-- AsyncButton version
+      <async-button role="button" color="primary" @click="handleAsyncClick">BaseButton</async-button>
+      <async-button role="button" :disabled="true" @click="handleAsyncClick">BaseButton Disabled</async-button>
+      <async-button role="button" color="warn" @click="handleAsyncClick">BaseButton with color props</async-button>
+      <async-button role="button" color="danger" @click="handleAsyncClick">BaseButton with color props</async-button>
+      -->
+
       <async-button color="primary" @click="handleAsyncClick">Click Me (Disabled for 1s/click)</async-button>
+
+      <p>Clicked {{ clickCount }} times</p>
     </div>
   </div>
 </template>

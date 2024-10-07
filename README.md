@@ -139,3 +139,20 @@ We imported the original code provided by the subject of `AsyncButton.vue` and a
 
 #### Exercise 10: slowing down the button on click
 
+We added a `clickCount` to track the number of clicks on the button. We changed the `timeout` from 2seconds to `clickCount * 1 second` to have a cooldown of 1s/click.
+Added a text to show the number of clicks.
+
+### Question 7: AsyncButton, finally() and then() methods
+
+The `AsyncButton` component is designed to handle asynchronous operations. When the button is clicked, the `onClick` handler is called (triggered in `HomePage.vue`), which returns a Promise. The `AsyncButton` component is aware of the returned Promise by the parent `onClick` handler because it is passed as a prop to the `AsyncButton` component. The `AsyncButton` component then uses the `Promise` to determine the state of the button (`isPending` = true/false => disabled/enabled).
+
+The callback is executed when the Promise is resolved, running the `finally()` method regardless of the Promise's state.
+
+The `finally()` method is used instead of `then()` because it is called regardless of the Promise's state. The `then()` method is only called when the Promise is resolved.
+
+
+### Question 8: Which bug is introduced if inheritAttrs: false is missing or set to true in AsyncBut ton? Why?
+
+Bug introduced:
+- The parent's non-prop attributes are automatically added to the root element of the component's template. This can cause unexpected behavior if the parent's non-prop attributes are not intended to be passed down to the component (Loss of control).
+- If `inheritAttrs: true`, there can be duplicate event handling (eg. `handleAsyncClick` will be applied to `AsyncButton` and `BaseButton` in root element => multiple invocation).
