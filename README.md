@@ -131,3 +131,11 @@ Three levels of buttons has been added :
 Here's the result:
 
 ![Page with new color palette](https://raw.githubusercontent.com/LucasKoc/TP3-ST2AWD/refs/heads/main/Ressources/Screenshot%202024-10-06%20at%2023.40.31.png "Our page with new color palette")
+
+#### Exercise 9: Add Async Button
+
+We imported the original code provided by the subject of `AsyncButton.vue` and added it to the `src/components` folder. 
+`AsyncButton` has been added to the `HomePage` component and a 2 second cooldown has been set to the button.
+
+#### Exercise 10: slowing down the button on click
+

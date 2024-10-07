@@ -72,6 +72,11 @@ button:focus:not(.disabled) {
   transform: scale(1.10);
 }
 
+button:active:not(.disabled) {
+  transform: scale(1.00);
+}
+
+
 button.disabled {
   cursor: not-allowed;
   opacity: 0.6;
